@@ -53,6 +53,14 @@ python setup.py sdist bdist_wheel
 
 This will create a dist directory containing the source distribution (*.tar.gz) and wheel distribution (*.whl) of the package.
 
+Check the package contents:
+ ```
+ twine check dist/*
+ ```
+Upload the package to PyPI:
+```
+twine upload dist/*
+```
 
 ## License
 
