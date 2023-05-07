@@ -19,11 +19,11 @@ colititato
 
 This will start a new game and prompt the first player to make a move. The game board will be displayed in the console as follows:
 
-|   |    |   |    |   |
-|:---:|:---:|:---:|:---:|:---:|
-| 1 | \| |  2 | \| | 3 |
-| 4 | \| |  5 | \| | 6 |
-| 7 | \| |  8 | \| | 9 |
+|   |   |   |
+|:---:|:---:|:---:|
+| 1 |  2 | 3 |
+| 4 |  5 | 6 |
+| 7 |  8 | 9 |
 
 To make a move, enter the number corresponding to the cell you want to mark (1-9) and press Enter. The cell will be marked with either "X" or "O", depending on whose turn it is. The game will continue until one of the players wins, or the game ends in a tie.
 
