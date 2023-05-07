@@ -151,14 +151,17 @@ class Scoreboard():
 
     def __repr__(self):
         return f'Scoreboard(player_wins={self.player_wins}, computer_wins={self.computer_wins}, ties={self.ties}, games_played={self.games_played})'
-    
-if __name__ == '__main__':
-    game = Game()
 
+def main():
+    game = Game()
+    game.select_marker()
     while True:
-        game.reset_board()
-        game.select_marker()
         game.play()
         if input('Play again? (Y/N): ').upper() != 'Y':
             print(game.scoreboard)
             break
+        game.reset_board()
+        game.select_marker()
+
+if __name__ == '__main__':
+    main()
